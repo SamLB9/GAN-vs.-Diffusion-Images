@@ -55,7 +55,7 @@ msc-dissertation/
 
 │── images                  # All figures generated
 
-│── model's weights         # The weight of the chapter 6 model
+│── model's weights         # The weight of the chapter 6's model
 
 │── notebooks               # All the ipynb notebooks used for the study 
 
