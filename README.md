@@ -2,7 +2,7 @@
 
 This repository hosts the final MSc Dissertation of **Sam Laborde-Balen**, completed as part of the MSc in Artificial Intelligence at the University of Edinburgh (2024–2025).  
 
-📄 The full dissertation PDF can be found here: [Download Dissertation](./dissertation.pdf)
+📄 The full dissertation PDF can be found here: [Download Dissertation](./MSc_dissertation_SLB.pdf)
 
 ---
 
