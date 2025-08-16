@@ -54,11 +54,7 @@ This dissertation provides a **systematic comparative analysis** of statistical 
 msc-dissertation/
 
 │── images                  # All figures generated
-
-│── model's weight          # The weight of the chapter 6 model
-
+│── model's weights         # The weight of the chapter 6 model
 │── notebooks               # All the ipynb notebooks used for the study 
-
 │── dissertation.pdf        # Full MSc Dissertation
-
 │── README.md               # Project summary
