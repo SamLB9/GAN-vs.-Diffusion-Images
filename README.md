@@ -1,5 +1,5 @@
 # MSc Dissertation – Comparative Analysis of GAN- and Diffusion-Generated Images for Generalizable Deepfake Detection
-This repository hosts the final MSc Dissertation of **Sam Laborde-Balen**, completed as part of the MSc in Artificial Intelligence at the University of Edinburgh (2024–2025).  
+This repository hosts my final MSc Dissertation, completed as part of the MSc in Artificial Intelligence at the University of Edinburgh (2024–2025).  
 
 📄 The full dissertation PDF can be found here: [Access Dissertation](./MSc_dissertation_SLB.pdf)
 
