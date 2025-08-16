@@ -17,8 +17,9 @@ In classification experiments with Random Forests, models trained on real and di
 
 ## 🛠 Methodology Overview
 
-- **Dataset:** ArtiFact benchmark (GANs, Diffusion, and Real images)  
-- **Feature extraction:**  
+- **Dataset:** ArtiFact benchmark (GANs and Diffusion) + Real images  
+- **Feature extraction:**
+  - Color distribution (RGB, HSV, YCrCb)  
   - Local noise statistics (windowed estimators, wavelet decomposition)  
   - Frequency analysis (FFT-based descriptors, spectral decay)  
   - Color histograms and structural embeddings  
@@ -29,9 +30,22 @@ In classification experiments with Random Forests, models trained on real and di
 
 ## 📊 Contributions
 
-1. Systematic comparison of handcrafted features for deepfake detection.  
-2. Evaluation of **cross-architecture generalization** strategies.  
-3. Evidence supporting **diffusion-based training** as a stronger foundation for universal fake image detectors.  
+This dissertation provides a **systematic comparative analysis** of statistical signatures distinguishing GAN- and diffusion-generated images. Using a diverse set of handcrafted features, the following key contributions are made:
+
+- **Statistical Signature Identification**  
+  - Uncovered consistent, domain-invariant differences between GAN- and diffusion-generated images across multiple descriptors.  
+  - GANs: increased brightness, reduced color diversity, edge-concentrated high-frequency noise, steeper spectral slopes, depleted high-frequency energy, and flattened texture embeddings.  
+  - Diffusion: partial recovery of natural characteristics, including intermediate color variance, dispersed noise patterns, smoother spectral decay, and more complex textures.  
+  - These patterns establish a robust **Real > Diffusion > GAN** hierarchy, suggesting reliable architecture-specific fingerprints for deepfake detection.  
+
+- **Generalization Strategy**  
+  - Demonstrated that training on **Real + Diffusion** improves generalization to unseen GANs by ~8% compared to the reverse setup.  
+  - Although not statistically significant (paired *t*-test), this asymmetry highlights diffusion-based training as a promising foundation for universal detectors.  
+
+- **Feature Evaluation**  
+  - Showed that **frequency-domain descriptors** provide the most consistent performance across datasets and generators.  
+  - Achieved relative gains of **+7–13% in average G-score** compared to other feature types.  
+  - Their stability makes them strong candidates for **lightweight, architecture-agnostic detection systems**.  
 
 ---
 
