@@ -59,6 +59,6 @@ msc-dissertation/
 
 │── notebooks               # All the ipynb notebooks used for the study 
 
-│── dissertation.pdf        # Full MSc Dissertation
+│── MSc_dissertation_SLB.pdf        # Full MSc Dissertation
 
 │── README.md               # Project summary
