@@ -7,22 +7,11 @@ This repository hosts my final MSc Dissertation, completed as part of the MSc in
 
 ## 📖 Abstract
 
-Generative models such as **GANs (Generative Adversarial Networks)** and **diffusion models** are capable of producing images that are increasingly indistinguishable from authentic photographs. This progress raises concerns regarding **digital authenticity, misinformation, and deepfake detection**.  
+The rise of photorealistic images from GANs and diffusion models challenges deepfake detection, as current methods often fail on images produced by unseen generative architectures. This dissertation examines shared and distinct visual patterns of GAN- and diffusion-generated images to address these limitations and inform the design of more generalizable detectors. We compare images from six leading generative models with real photographs across ImageNet, Faces, and Bedrooms domains using the ArtiFact dataset, focusing on four feature families: **color moments, high-frequency noise, frequency descriptors, and texture embeddings**.  
 
-In this work, we perform a **comparative analysis of GAN- and diffusion-generated images** using handcrafted statistical features. Four feature categories are extracted:  
-- **Color distributions**  
-- **Noise patterns**  
-- **Frequency statistics**  
-- **Texture & structure embeddings**  
+Across all domains and descriptors, diffusion models more closely match natural image statistics than GANs. GANs tend to boost brightness, compress color variance, concentrate high-frequency noise around edges, produce steeper-than-natural spectral slopes with depleted high-frequency energy, and yield flatter texture embeddings. Diffusion images partially restore color diversity, noise dispersion, spectral regularity, and texture complexity. This **Real > Diffusion > GAN** hierarchy appears consistently across datasets, revealing architecture-specific fingerprints that can guide robust detection strategies.  
 
-Random Forest classifiers are trained on different training regimes to assess **cross-architecture generalization** (e.g., training on GANs and testing on Diffusion, and vice versa).  
-
-Key findings:  
-- **Noise and frequency-domain features** consistently outperform color and texture for distinguishing real from synthetic images.  
-- Training with **Real + Diffusion** provides stronger generalization to unseen GANs compared to the opposite.  
-- Diffusion models appear to partially recover mid-frequency structures absent in GANs, but still fail to replicate authentic sensor noise.  
-
-These results highlight the importance of handcrafted, lightweight descriptors as **robust, model-agnostic tools for deepfake detection**.  
+In classification experiments with Random Forests, models trained on real and diffusion images generalize more effectively to unseen GAN samples than the reverse (+8%), though the difference is not statistically significant. Frequency features, while also not statistically superior, show the most consistent performance across domains (+7–13% over other modalities). These results suggest that pairing frequency-based cues with real+diffusion training data offers a lightweight, architecture-agnostic path toward more robust deepfake detection.  
 
 ---
 
