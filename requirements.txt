@@ -1,0 +1,17 @@
+# Core libraries
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+seaborn
+imageio
+pillow
+opencv-python
+scikit-image
+tqdm
+imblearn
+umap-learn
+pywavelets
+torch
+torchvision
