@@ -87,3 +87,5 @@ This dissertation provides a **systematic comparative analysis** of statistical 
 │── MSc_dissertation_SLB.pdf        # Full MSc Dissertation
 
 │── README.md               # Project summary
+
+│── requirement.txt               # Python libraries used
