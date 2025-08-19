@@ -80,8 +80,6 @@ This dissertation provides a **systematic comparative analysis** of statistical 
 
 ## 📌 Repository Structure
 
-msc-dissertation/
-
 │── images                  # All figures generated
 
 │── notebooks               # All the ipynb notebooks used for the study 
