@@ -52,7 +52,7 @@ The analysis spans three visual domains:
   - Local noise statistics (windowed estimators, wavelet decomposition)  
   - Frequency analysis (FFT-based descriptors, spectral decay)  
   - Color histograms and structural embeddings  
-- **Classifier:** Random Forests  
+- **Classifier:** Random Forests (200 trees)
 - **Evaluation:** Cross-architecture setups with G-score metrics  
 
 ---
