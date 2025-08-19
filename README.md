@@ -40,15 +40,6 @@ The analysis spans three visual domains:
   - 5,000 Gansformer (GAN), 768 DDPM (Diffusion), 5,000 real bedrooms  
   - Contains an imbalance between GAN and diffusion samples, which mainly affects classifier training but is less critical for feature-based statistical analyses.  
 
-| **Domain**   | **Model (Type)**       | **Synthetic** | **Real** |
-|--------------|------------------------|---------------|----------|
-| Bedrooms     | Gansformer (GAN)       | 5,000         | 5,000    |
-|              | DDPM (Diffusion)       | 768           |          |
-| Faces        | StyleGAN2 (GAN)        | 6,000         | 6,000    |
-|              | Palette (Diffusion)    | 6,000         |          |
-| ImageNet     | BigGAN (GAN)           | 10,000        | 10,000   |
-|              | VQ-Diffusion (Diffusion)| 10,000       |          |
-
 ⚠️ **Note:** The dataset itself is not included in this repository. For access, please refer to the official [ArtiFact dataset](https://arxiv.org/abs/10222083).
 
 ---
